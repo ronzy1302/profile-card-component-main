@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(185, 75%, 39%);
+  overflow: hidden;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.top,
+.bottom {
+  position: absolute;
+  z-index: -1;
+}
+
+.top {
+  bottom: 35%;
+  transform: rotate(25deg);
+  right: 45%;
+}
+
+.bottom {
+  top: 48%;
+  left: 50%;
+}
+
+.card {
+  width: 320px;
+  height: auto;
+  background: url("./images/bg-pattern-card.svg") no-repeat top white;
+  text-align: center;
+  border-radius: 15px;
+  margin: auto;
+  margin-top: 10%;
+}
+
+.victor {
+  border: 6px solid white;
+  border-radius: 50%;
+  margin-top: 20%;
+}
+
+.body {
+  padding: 20px;
+  border-bottom: 1px solid hsl(0, 0%, 90%);
+}
+
+.name,
+.number {
+  font-size: 18px;
+  margin: 10px;
+  color: hsl(229, 23%, 23%);
+  font-weight: 700;
+}
+
+.age,
+.city,
+.labels {
+  color: hsl(0, 0%, 59%);
+}
+
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+
+.labels {
+  font-size: 12px;
+}
+
+@media screen and (max-width: 400px) {
+  .card {
+    margin-top: 30%;
+  }
+}
